@@ -40,6 +40,11 @@ def main():
                 print("Game over!")
                 sys.exit(0)
 
+            for s in shots:
+                if a.collides_with(s):
+                    a.kill()
+                    s.kill()
+
         screen.fill(pygame.Color(0, 0, 0))
         for d in drawable:
             d.draw(screen)

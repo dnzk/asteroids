@@ -3,6 +3,7 @@ from constants import SCREEN_WIDTH, SCREEN_HEIGHT
 from player import Player
 from asteroid import Asteroid
 from asteroidfield import AsteroidField
+import sys
 
 
 def main():
@@ -28,6 +29,11 @@ def main():
                 return
 
         updatable.update(dt)
+        for a in asteroids:
+            if a.collides_with(player):
+                print("Game over!")
+                sys.exit(0)
+
         screen.fill(pygame.Color(0, 0, 0))
         for d in drawable:
             d.draw(screen)

@@ -4,11 +4,11 @@ Asteroid-shooter game, built on top of [pygame](https://pygame.org).
 
 ## Controls
 
-`W` - move forward
-`A` - move backward
-`S` - rotate left
-`D` - rotate right
-`Space` - shoot
+* `W` - move forward
+* `A` - move backward
+* `S` - rotate left
+* `D` - rotate right
+* `Space` - shoot
 
 ## Todo:
 
